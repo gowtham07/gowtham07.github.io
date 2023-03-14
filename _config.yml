@@ -1,10 +1,8 @@
 #
 # This file contains configuration flags to customize your site
 #
-
 # Name of your site (displayed in the header)
 name: Gowtham
-
 # Short bio or description (displayed in the header)
 description: Blog post for the paper "Calibrate Before Use to  Improve Few-Shot Performance of Language Models " 
 
