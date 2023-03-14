@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+GowthamKrishna Addluri (7015300)
+Master student (Informatik) at Saarland University
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[goad00002@stud.uni-saarland.de](mailto:email@goad00002@stud.uni-saarland.de)
