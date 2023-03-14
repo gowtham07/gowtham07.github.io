@@ -3,7 +3,7 @@ layout: post
 title: You're up and running!
 ---
 
-Hey, this is where I am going to write about my nlp paper.
+Hey, this
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
