@@ -150,4 +150,12 @@ In this way the authors try to calibrate the W to rectify the error. Authors als
 Contextual calibration, despite using no training data, achieves similar accuracy to an “oracle” calibration that finds the
 best W using the validation set. 
 
+## Effect of Contextual Calibration
+
+Authors evaluated the effectiveness of contextual calibration across standart text classification, information retreival  and fact retreival datasets and LMs. Evaluated with fixed prompt and 0, 1, 4, 8, and 16 five different training examples on
+different sizes of GPT-3 and GPT-2 language models.
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/15.png?raw=true" alt="gif">
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/16.png?raw=true" alt="gif">
 
