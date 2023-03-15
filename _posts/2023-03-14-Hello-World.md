@@ -128,3 +128,7 @@ Because of the internal bias we have the accuracy change. Authors suggest a proc
 Step 1 is to identify the bias in the model and this can be done by using a context free input. Get model’s prediction( Ideally it should be 50%) but model might give 70% due to bias
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/11.png?raw=true" alt="gif">
+
+We can correct this error by setting W and b so that the class scores for the content-free input are uniform. We first
+obtain ˆp for the content-free input, denoted ˆpcf. We then set W = diag(ˆpcf)−1 and b to the all-zero vector.7 To make
+test predictions, we compute Wˆp + b and take the argmax.
