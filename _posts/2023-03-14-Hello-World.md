@@ -129,6 +129,17 @@ Step 1 is to identify the bias in the model and this can be done by using a cont
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/11.png?raw=true" alt="gif">
 
-We can correct this error by setting W and b so that the class scores for the content-free input are uniform. We first
-obtain ˆp for the content-free input, denoted ˆpcf. We then set W = diag(ˆpcf)−1 and b to the all-zero vector.cTo make
-test predictions, we compute Wˆp + b and take the argmax.
+Here, we look to correct this by “calibrating” the model’s output probabilities. A common technique for
+adjusting output probabilities is to apply an affine transformation 
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/12.png?raw=true" alt="gif">
+
+where a weight matrix W and a bias vector b are applied to the original probabilities ˆp to get the new probabilities ^q.
+
+The main challenge in the zero- or few-shot setting is that there is no enough data to learn W and b. Thus the authors propose a novel data-free procedure to infer a good setting of these parameters. The key idea is that the model’s bias towards
+certain answers can be estimated by feeding in a contentfree input such as the string “N/A”. This error can be corrected by setting W and b so that the class scores for the content-free input are uniform.
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/13.png?raw=true" alt="gif">
+
+To make test predictions, compute Wpˆ + b and take the argmax
+
