@@ -19,10 +19,15 @@ First let us see what is  fine-tuning , few-shot learning and few-shot-incontext
 
 **Few shot learning** - When you want to train a model on any task using very few samples. e.g., you have a model trained on different but related task and you (optionally) modify it and train for target task using small number of examples.
 
-**Few shot learning** - During in-context learning, we give the LM a prompt that consists of a list of input-output pairs that demonstrate a task. At the end of the prompt, we append a test input and allow the LM to make a prediction just by conditioning on the prompt and predicting the next tokens. To correctly answer the prompts, the model needs to read the training examples to figure out the input distribution (financial or general news), output distribution (Positive/Negative or topic), input-output mapping (sentiment or topic classification), and the formatting. More about it can be found here. [The mystery of in-context learning](http://ai.stanford.edu/blog/understanding-incontext/))
+**Few shot in-context learning** - During in-context learning, we give the LM a prompt that consists of a list of input-output pairs that demonstrate a task. At the end of the prompt, we append a test input and allow the LM to make a prediction just by conditioning on the prompt and predicting the next tokens. To correctly answer the prompts, the model needs to read the training examples to figure out the input distribution (financial or general news), output distribution (Positive/Negative or topic), input-output mapping (sentiment or topic classification), and the formatting. More about it can be found here. [The mystery of in-context learning](http://ai.stanford.edu/blog/understanding-incontext/)
 
 **For example:**
 
 **Fine tuning** - Training a model for intent classification and then fine tuning it on a different dataset.
 
 **Few shot learning** - Training a language model on large text dataset and modifying it (usually last (few) layer) to classify intents by training on small labelled dataset.
+
+**Few shot in-context learning** 
+
+
+![_config.yml]({{ site.baseurl }}/images/incontext.png)
