@@ -54,8 +54,14 @@ The model is presented with an example. We only show it the features and ask it 
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/2.gif?raw=true" alt="gif">
 
-In this way after exposing the model to lot of text from the internet to predict the next token , the model learns the internal representation of the language.
+In this way after exposing the model to lot of text from the internet to predict the next token, the model learns the internal representation of the language.
 
 ## Why In-context learning?
 
 It is easy to use as changing the prompt immediately leads to a new model. Allows users even those without technical expertise to create NLP systems by reusing the same model for each task. Finally, since in-context learning reuses the same model for each task, it reduces memory requirements and system complexity when serving many different tasks.
+
+## Problems with In-context learning
+
+The research paper finds that in-cnext learning is unstable across different prompts. 
+A prompt contains three components: a format, a set of training examples, and a permutation (ordering) for those examples. 
+Different choices for these factors can lead to highly different accuracies, e.g., changing the permutation of the training examples. This instability implies that GPT-3 users cannot expect to consistently obtain good accuracy. 
