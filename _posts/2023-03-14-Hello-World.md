@@ -121,4 +121,10 @@ The authors of the paper find that this occurs due to the internal bias of the m
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/10.png?raw=true" alt="gif">
 
-We see due to models internal bias positive examples are predicted with high accuracy.
+##  How to mitigate the model’s internal bias?
+
+Because of the internal bias we have the accuracy change. Authors suggest a procedure called Contextual calibration and the internal bias can be mitigated by Contextual calibration
+
+Step 1 is to identify the bias in the model and this can be done by using a context free input. Get model’s prediction( Ideally it should be 50%) but model might give 70% due to bias
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/11.png?raw=true" alt="gif">
