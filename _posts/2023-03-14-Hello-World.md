@@ -94,3 +94,17 @@ From the below picture we can see that how the accuracy varies with changing the
 **Prompt accuracy-** : Yes
 **Prompt ordering-** : Yes
 **Prompt examples-** : Yes
+
+## Why models have prompt sensitivity?
+
+The paper discusses three biases for the prompt sensitivity
+
+**1.Frequent in the prompt (majority label bias) :** Model frequently repeating the class of the one training example, which explains the variance across example selections
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/7.png?raw=true" alt="gif">
+
+In the above figure when we observe the first unbalanced part, when we have more positive prompt examples the model tends to output the postive class with high probability on the validation set. Let us ignore the last part "PPPN" where model tends to output the positive class with less probability, this will be covered in the next bias.
+
+**2.Recency Bias :** Examples near end of prompt dominate predictions and helps explain variance across example permutations
+
+From the figure in the first bias, let us check the balanced part and the last unbalanced part
