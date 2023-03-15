@@ -42,4 +42,5 @@ GPT-3, or the third-generation Generative Pre-trained Transformer, is a machine 
 
 Training is the process of exposing the model to lots of text.
 
-![myfile](https://github.com/gowtham07/gowtham07.github.io/blob/master/images/1.mp4)
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/1.mp4" alt="gif" width="300" height="540">
