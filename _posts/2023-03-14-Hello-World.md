@@ -45,3 +45,8 @@ Training is the process of exposing the model to lots of text.
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/1.gif?raw=true" alt="gif">
 (source  [https://twitter.com/JayAlammar/status/1285848228873801728](https://twitter.com/JayAlammar/status/1285848228873801728))
+
+The dataset of 300 billion tokens of text is used to generate training examples for the model. For example, these are three training examples generated from the one sentence at the top.
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/1.gif?raw=true" alt="gif">
+
+The model is presented with an example. We only show it the features and ask it to predict the next word.
