@@ -31,3 +31,15 @@ First let us see what is  fine-tuning , few-shot learning and few-shot-incontext
 
 
 ![_config.yml]({{ site.baseurl }}/images/incontext.png)
+
+Now let us know a little bit about auto-regressive model GPT-3 and how its training happens
+
+## GPT-3
+
+GPT-3, or the third-generation Generative Pre-trained Transformer, is a machine learning model trained using internet data to generate any type of text. GPT-3 processes text input to perform a variety of natural language tasks. It uses both natural language generation and natural language processing to understand and generate natural human language text. Generating content understandable to humans has historically been a challenge for machines that don't know the complexities and nuances of language, but GPT-3 is trained to generate realistic human text. GPT-3 has been used to create articles, poetry, stories, news reports and dialogue using a small amount of input text that can be used to produce large amounts of copy. GPT-3 can create anything with a text structure and not just human language text. It can also generate text summarizations and even programming code.
+
+**Training**
+
+Training is the process of exposing the model to lots of text.
+
+![](1.mp4)
