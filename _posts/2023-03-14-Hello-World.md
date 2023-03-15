@@ -130,18 +130,18 @@ Step 1 is to identify the bias in the model and this can be done by using a cont
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/11.png?raw=true" alt="gif">
 
 Here, we look to correct this by “calibrating” the model’s output probabilities. A common technique for
-adjusting output probabilities is to apply an affine transformation. For classification tasks, &#710p will be the set of probabilities that are associated with each label name, renormalized to one. For generation tasks, ˆp is the entire set of probabilities for the first token. In this paper, the authors restrict the matrix W to be diagonal, known as vector scaling  to prevent the parameters from growing quadratically in the size of ˆp. 
+adjusting output probabilities is to apply an affine transformation. For classification tasks, p will be the set of probabilities that are associated with each label name, renormalized to one. For generation tasks, p is the entire set of probabilities for the first token. In this paper, the authors restrict the matrix W to be diagonal, known as vector scaling  to prevent the parameters from growing quadratically in the size of p. 
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/12.png?raw=true" alt="gif">
 
-where a weight matrix W and a bias vector b are applied to the original probabilities ˆp to get the new probabilities ^q.
+where a weight matrix W and a bias vector b are applied to the original probabilities p to get the new probabilities q.
 
 The main challenge in the zero- or few-shot setting is that there is no enough data to learn W and b. Thus the authors propose a novel data-free procedure to infer a good setting of these parameters. The key idea is that the model’s bias towards
 certain answers can be estimated by feeding in a contentfree input such as the string “N/A”. This error can be corrected by setting W and b so that the class scores for the content-free input are uniform.
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/13.png?raw=true" alt="gif">
 
-To make test predictions, compute Wpˆ + b and take the argmax.
+To make test predictions, compute Wp + b and take the argmax.
 
 In this way the authors try to calibrate the W to rectify the error. Authors also try to know how good is contextual calibration is at inferring a good setting of W. Authors compare contextual calibration accuracy to an “oracle calibration” method that uses the validation set to find the best possible diagonal W. 
 
