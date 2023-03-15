@@ -141,5 +141,13 @@ certain answers can be estimated by feeding in a contentfree input such as the s
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/13.png?raw=true" alt="gif">
 
-To make test predictions, compute Wpˆ + b and take the argmax
+To make test predictions, compute Wpˆ + b and take the argmax.
+
+In this way the authors try to calibrate the W to rectify the error. Authors also try to know how good is contextual calibration is at inferring a good setting of W. Authors compare contextual calibration accuracy to an “oracle calibration” method that uses the validation set to find the best possible diagonal W. 
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/14.png?raw=true" alt="gif">
+
+Contextual calibration, despite using no training data, achieves similar accuracy to an “oracle” calibration that finds the
+best W using the validation set. 
+
 
