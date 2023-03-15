@@ -76,3 +76,9 @@ Below are the three ways that we can prompt the model with same examples
 From the below picture we can see that how the accuracy varies with changing the prompt format
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/4.png?raw=true" alt="gif">
+
+**Permutation of examples:**
+
+Below are the permuation of the same examples in in-context learning
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/5.png?raw=true" alt="gif">
