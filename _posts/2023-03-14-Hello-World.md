@@ -13,11 +13,13 @@ GPT-3 can perform numerous tasks when provided a natural language prompt that co
 
 ## Introduction
 
-First let us see what is the difference between fine-tuning and few-shot learning and also about the GPT-3. 
+First let us see what is  fine-tuning , few-shot learning and few-shot-incontext-learning and also about the GPT-3. 
 
 **Fine tuning** - When you already have a model trained to perform the task you want but on a different dataset, you initialise using the pre-trained weights and train it on target (usually smaller) dataset (usually with a smaller learning rate).
 
 **Few shot learning** - When you want to train a model on any task using very few samples. e.g., you have a model trained on different but related task and you (optionally) modify it and train for target task using small number of examples.
+
+**Few shot learning** - During in-context learning, we give the LM a prompt that consists of a list of input-output pairs that demonstrate a task. At the end of the prompt, we append a test input and allow the LM to make a prediction just by conditioning on the prompt and predicting the next tokens. To correctly answer the two prompts below, the model needs to read the training examples to figure out the input distribution (financial or general news), output distribution (Positive/Negative or topic), input-output mapping (sentiment or topic classification), and the formatting.
 
 **For example:**
 
