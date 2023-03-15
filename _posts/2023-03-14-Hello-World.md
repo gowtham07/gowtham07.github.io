@@ -44,3 +44,4 @@ Training is the process of exposing the model to lots of text.
 
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/1.gif?raw=true" alt="gif">
+(source ) [https://twitter.com/JayAlammar/status/1285848228873801728](https://twitter.com/JayAlammar/status/1285848228873801728)
