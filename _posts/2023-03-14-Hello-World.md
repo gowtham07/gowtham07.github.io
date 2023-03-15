@@ -62,6 +62,17 @@ It is easy to use as changing the prompt immediately leads to a new model. Allow
 
 ## Problems with In-context learning
 
-The research paper finds that in-cnext learning is unstable across different prompts. 
+The research paper finds that in-conext learning is unstable across different prompts. 
+
 A prompt contains three components: a format, a set of training examples, and a permutation (ordering) for those examples. 
-Different choices for these factors can lead to highly different accuracies, e.g., changing the permutation of the training examples. This instability implies that GPT-3 users cannot expect to consistently obtain good accuracy. 
+Different choices for these factors can lead to highly different accuracies, e.g., changing the permutation of the training examples. This instability implies that GPT-3 users cannot expect to consistently obtain good accuracy.
+
+**Prompt format:**
+
+Below are the three ways that we can prompt the model with same examples
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/3.png?raw=true" alt="gif">
+
+From the below picture we can see that how the accuracy varies with changing the prompt format
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/4.png?raw=true" alt="gif">
