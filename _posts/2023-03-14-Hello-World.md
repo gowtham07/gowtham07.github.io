@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calibrate Before Use for improving Few-Shot Performance of Language Models
-permalink: /Report/
+permalink: /Hello-World/
 ---
 
 
