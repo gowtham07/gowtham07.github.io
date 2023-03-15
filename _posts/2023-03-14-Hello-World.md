@@ -107,4 +107,18 @@ In the above figure when we observe the first unbalanced part, when we have more
 
 **2.Recency Bias :** Examples near end of prompt dominate predictions and helps explain variance across example permutations
 
-From the figure in the first bias, let us check the balanced part and the last unbalanced part
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/8.png?raw=true" alt="gif">
+
+In the above highlighted part of the image, in the balanced part when the prompt has equal negative and positive examples and unbalanced part the model tends to output the class with high probability which is to the end of the prompt examples.
+
+**3.Common token Bias :** Common n-grams dominate predictions and helps explain variance across prompt formats
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/9.png?raw=true" alt="gif">
+
+GPT-3 is biased towards outputting tokens that are common in its pretraining distribution, which is likely suboptimal for the distribution of answers on the downstream task. From the above figure we can see that the model might output america as the probability of america being in the corpus is high.
+
+The authors of the paper find that this occurs due to the internal bias of the model, which causes shift in output probabilities.
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/10.png?raw=true" alt="gif">
+
+We see due to models internal bias positive examples are predicted with high accuracy.
