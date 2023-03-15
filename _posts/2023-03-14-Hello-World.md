@@ -82,3 +82,15 @@ From the below picture we can see that how the accuracy varies with changing the
 Below are the permuation of the same examples in in-context learning
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/5.png?raw=true" alt="gif">
+
+In the above example we can see that by changing the order of the prompt examples the accuracy of the model has varied
+
+From the below picture we can see that how the accuracy varies with changing the order of the examples and also with the different prompt examples. We have to note that in the below picture we have ten different sets of prompt examples and in each set we get 24 different permutations of the four prompt examples. 
+
+<img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/6.png?raw=true" alt="gif">
+
+**Does prompt affect accuracy?**
+
+**Prompt accuracy-** : Yes
+**Prompt ordering-** : Yes
+**Prompt examples-** : Yes
