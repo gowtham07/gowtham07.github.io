@@ -130,7 +130,7 @@ Step 1 is to identify the bias in the model and this can be done by using a cont
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/11.png?raw=true" alt="gif">
 
 Here, we look to correct this by “calibrating” the model’s output probabilities. A common technique for
-adjusting output probabilities is to apply an affine transformation 
+adjusting output probabilities is to apply an affine transformation. For classification tasks, ˆp will be the set of probabilities that are associated with each label name, renormalized to one. For generation tasks, ˆp is the entire set of probabilities for the first token. In this paper, the authors restrict the matrix W to be diagonal, known as vector scaling  to prevent the parameters from growing quadratically in the size of ˆp. 
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/12.png?raw=true" alt="gif">
 
