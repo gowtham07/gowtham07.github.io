@@ -159,3 +159,10 @@ different sizes of GPT-3 and GPT-2 language models.
 
 <img src="https://github.com/gowtham07/gowtham07.github.io/blob/master/images/16.png?raw=true" alt="gif">
 
+The contextual calibration improves mean and worst-case accuracy and also reduces variance across training sets and permutations. It also reduces variance across prompt formats.
+
+## Conclusion
+
+Authors show that few-shot learning can be highly volatile across different choices of the prompt. Through a detailed analysis, they identify that this occurs due to three biases in LMs. Then they introduce a method "contextual calibration" which calibrates the models weight to mitigate the bias.
+
+Though the authors introduced this novel method of contextual calibration, it makes difficult to correctly develop and compare new methods (e.g., pretraining schemes or model architectures). Thus the authors hope to make other few-shot learning methods more robust,and also expand their techniques to cover a wider ranger of tasks.
